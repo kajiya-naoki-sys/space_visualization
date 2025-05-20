@@ -1,6 +1,5 @@
-FROM my-python-base:3.8
+FROM python:3.10
 WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY ./src /app
-CMD ["python", "main.py"]
+#COPY requirements.txt .
+#RUN pip install -r requirements.txt
+CMD ["/bin/bash"]

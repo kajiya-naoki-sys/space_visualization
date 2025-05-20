@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: space_visualization
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/src
+    working_dir: /src
